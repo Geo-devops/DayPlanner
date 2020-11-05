@@ -12,9 +12,19 @@ function clock() {
      $('#currentDay').html(dateString);
 }
 
+// clock times and areas to schedule tasks
 
+for (var hour = 9; hour < 18;) {
+    workHours.push(moment({hour}).format());
+    // need to append
+    $('.container').append()
+
+}
 
 // 1 hour increments for scheduling on hour
+$('time-block').each(function() {
+$(this).find('.text-area').val(availableHours)
 
-// use moment JS library to find code 
+
+}
 // how to save to local storage
