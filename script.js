@@ -4,7 +4,7 @@ $(document).ready(function(){
       
       function updateTime () {
         var now = moment();
-        var humanReadable = now.format('hh:mm:ssA');
+        var humanReadable = now.format('DD MM YYYY hh:mm:ssA');
         console.log('humanReadable');
         clock.textContent = humanReadable
       }
