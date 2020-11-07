@@ -83,3 +83,14 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: larger;
   }
+
+  #clock { 
+    margin-left: 500px;
+  }
+/* 
+  .colorCode {
+    background-color: white;
+    background-color: grey;
+    background-color: red;
+    background-color: yellow;
+  } */

@@ -27,7 +27,7 @@ $(".saveBtn").on("click", function(){
     localStorage.getItem(hour, activity)
 });
 
-
+$("#hour-8 .description").val(localStorage.getItem("hour-8"))
 $("#hour-9 .description").val(localStorage.getItem("hour-9"))
 $("#hour-10 .description").val(localStorage.getItem("hour-10"))
 $("#hour-11 .description").val(localStorage.getItem("hour-11"))
@@ -44,7 +44,18 @@ const colorCode = document.getElementsByClassName("colorCode");
 
 var currentHour = date.getHours();
 $('.colorCode').each(function(){
-    var val = parseInt()
-})
+    var val = parseInt($(this).prop('id'));
+    if (val > currentHour && val < currentHour+6){
+        $(this).css('background-color', 'Grey');
+    } else if(val < currentHour && val > currentHour-6){
+        $(this).css('background-color', 'Red');
+    }else if(val === currentHour){
+        $(this).css('background-color', 'Blue');
+    }else{
+        $(this).css('background-color', 'Yellow');
+    }
+    
+    
+});
 
 
